@@ -1,0 +1,60 @@
+@font-face {
+  font-family: "Norso-Bold";
+  src: url(fonts/Norse-Bold.otf);
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(fonts/Roboto/Roboto-Bold.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto";
+}
+
+a {
+  color: #ffffff;
+}
+
+#monkey-d-luffy {
+  height: 900px;
+  width: 500px;
+  margin-bottom: -25px;
+}
+
+.author {
+  position: relative;
+  bottom: 50px;
+  left: 140px;
+  color: #ffffff;
+}
+.container {
+  display: flex;
+}
+
+.strawhat {
+  position: absolute;
+  top: 80px;
+  opacity: 0.6;
+  width: 150px;
+  height: 130px;
+}
+.black-box {
+  position: absolute;
+  top: 80px;
+  left: 150px;
+  opacity: 0.6;
+  color: #ffffff;
+  font-size: 6.2rem;
+  font-family: "Norso-Bold", sans-serif;
+  width: 350px;
+  height: 130px;
+  background: #000000;
+  line-height: 130px;
+}
+
+#header {
+  padding: 100px 30px 50px;
+  font-size: 1.4rem;
+}
