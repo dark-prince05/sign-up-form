@@ -3,18 +3,29 @@
   src: url(fonts/Norse-Bold.otf);
   font-weight: bold;
 }
+
 @font-face {
   font-family: "Roboto";
   src: url(fonts/Roboto/Roboto-Bold.ttf);
+  font-weight: bold;
 }
+
+@font-face {
+  font-family: "Roboto";
+  src: url(fonts/Roboto/Roboto-Medium.ttf);
+  font-weight: light;
+}
+
 * {
   margin: 0;
   padding: 0;
   font-family: "Roboto";
+  font-weight: bold;
 }
 
 a {
   color: #ffffff;
+  text-decoration: none;
 }
 
 #monkey-d-luffy {
@@ -26,9 +37,10 @@ a {
 .author {
   position: relative;
   bottom: 50px;
-  left: 140px;
+  left: 130px;
   color: #ffffff;
 }
+
 .container {
   display: flex;
 }
@@ -40,6 +52,7 @@ a {
   width: 150px;
   height: 130px;
 }
+
 .black-box {
   position: absolute;
   top: 80px;
@@ -55,6 +68,79 @@ a {
 }
 
 #header {
-  padding: 100px 30px 50px;
+  padding: 150px 30px 50px;
   font-size: 1.4rem;
+}
+
+.starter {
+  font-size: 1.5rem;
+  padding-bottom: 20px;
+  padding-top: 30px;
+}
+
+#sign-up {
+  padding: 0 30px 30px;
+  color: #303030;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  font-size: 0.9rem;
+}
+
+label {
+  letter-spacing: 2px;
+}
+
+.input-fields {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+input {
+  width: 250px;
+  height: 30px;
+  outline: none;
+  border-radius: 5px;
+  color: #303030;
+  appearance: none;
+  font-weight: 200;
+  font-size: 1rem;
+  padding-left: 5px;
+  border: 1px solid grey;
+}
+
+#first-name,
+#email,
+#password {
+  margin-right: 50px;
+}
+
+input:focus {
+  border: 1px solid blue;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+input:focus:invalid {
+  border: 1px solid red;
+}
+
+button {
+  width: 230px;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  background-color: #596d48;
+  color: rgba(255, 255, 255);
+  font-size: 1.1rem;
+  margin: 40px 30px 20px;
+}
+
+.acc {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-left: 30px;
+}
+
+#log-in {
+  color: #596d48;
 }

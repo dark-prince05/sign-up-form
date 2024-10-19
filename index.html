@@ -29,44 +29,49 @@
       <div class="informations">
         <div id="header">
           This form is for anyone who wants to join the legendary crew of the
-          Straw Hat Pirates! To become a part of the crew, you'll need to
-          provide your details, including a username and password. The captain
-          of this fearless pirate crew is none other than Monkey D. Luffy, a
-          bold and determined pirate whose dream is to become the King of the
-          Pirates by finding the ultimate treasure, the One Piece. By filling
-          out this form, you're one step closer to joining Luffy and the crew on
-          their thrilling adventures across the Grand Line!
+          Straw Hat Pirates! The captain of this fearless pirate crew is none
+          other than Monkey D. Luffy, a bold and determined pirate whose dream
+          is to become the King of the Pirates by finding the ultimate treasure,
+          the One Piece. <br /><br />
+          You <em>know</em> you want to.
         </div>
         <form id="sign-up" action="">
-          <div>Let's do this!</div>
-          <div>
-            <label for="first-name">FIRST NAME</label>
-            <input type="text" id="first-name" name="first-name" />
-          </div>
-          <div>
-            <label for="last-name">LAST NAME</label>
-            <input type="text" id="last-name" name="last-name" />
-          </div>
-          <div>
-            <label for="email">EMAIL</label>
-            <input type="email" id="email" name="email" />
-          </div>
-          <div>
-            <label for="phone-number">PHONE NUMBER</label>
-            <input type="tel" id="phone-number" name="phone-number" />
-          </div>
-          <div>
-            <label for="password">PASSWORD</label>
-            <input type="password" id="password" name="password" />
-          </div>
-          <div>
-            <label for="password">CONFIRM PASSWORD</label>
-            <input type="password" id="password" name="password" />
+          <div class="starter">Let's do this!</div>
+          <div class="input-fields">
+            <div>
+              <label for="first-name">FIRST NAME*</label><br />
+              <input type="text" id="first-name" name="first-name" required />
+            </div>
+            <div>
+              <label for="last-name">LAST NAME</label><br />
+              <input type="text" id="last-name" name="last-name" />
+            </div>
+            <div>
+              <label for="email">EMAIL*</label><br />
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div>
+              <label for="phone-number">PHONE NUMBER</label><br />
+              <input
+                type="tel"
+                id="phone-number"
+                name="phone-number"
+                pattern="^\d{10}$"
+              />
+            </div>
+            <div>
+              <label for="password">PASSWORD*</label><br />
+              <input type="password" id="password" name="password" required />
+            </div>
+            <div>
+              <label for="password">CONFIRM PASSWORD*</label><br />
+              <input type="password" id="password" name="password" required />
+            </div>
           </div>
         </form>
-        <button type="button" form="sign-up">Create Account</button>
+        <button type="submit" form="sign-up">Create Account</button>
         <div class="acc">
-          Already have an account?<span id="log-in">Log in</span>
+          Already have an account?<a href="index.html" id="log-in"> Log in</a>
         </div>
       </div>
     </div>
