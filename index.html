@@ -61,11 +61,25 @@
             </div>
             <div>
               <label for="password">PASSWORD*</label><br />
-              <input type="password" id="password" name="password" required />
+              <input
+                type="password"
+                id="password"
+                name="password"
+                pattern="^[A-Za-z1-9]*$"
+                minlength="8"
+                required
+              />
             </div>
             <div>
               <label for="password">CONFIRM PASSWORD*</label><br />
-              <input type="password" id="password" name="password" required />
+              <input
+                type="password"
+                id="password"
+                name="password"
+                pattern="^[A-Za-z1-9]*$"
+                minlength="8"
+                required
+              />
             </div>
           </div>
         </form>
